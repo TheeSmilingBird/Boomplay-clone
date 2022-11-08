@@ -96,6 +96,7 @@ input {
   width: 150px;
   height: 30px;
   border-radius: 50px;
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -166,6 +167,10 @@ input {
   /* border: 2px solid green; */
 }
 
+.profile-section {
+  margin-top: 20px;
+}
+
 /* sidebar ends */
 
 /* page contents */
@@ -232,6 +237,7 @@ input {
 @media (min-width: 992px) {
   .input-group {
     width: 300px;
+    margin-right: 20px;
   }
 
   .play-and-appstore-wrapp {
