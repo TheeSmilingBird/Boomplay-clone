@@ -24,6 +24,7 @@
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb);
   border-radius: 4px;
+  height: 3px;
 }
 
 body {
@@ -64,7 +65,7 @@ input {
 }
 
 .image-container {
-  width: 150px;
+  width: 180px;
   height: 100%;
   background: url("../assets/boomplay-svg.svg") no-repeat center center;
   background-size: 120px 25px;
@@ -78,7 +79,7 @@ input {
 }
 
 .search-bar-container {
-  width: calc(100% - 150px);
+  width: calc(100% - 180px);
   height: 100%;
   background-color: var(--main-body-bg);
 }
@@ -155,16 +156,18 @@ input {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 150px;
+  width: 180px;
   background: transparent;
   padding-top: 62px;
-  overflow: auto;
 }
 
 .sidebar-content {
   width: 90%;
-  margin: auto;
-  /* border: 2px solid green; */
+  margin-left: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90vh;
+  padding-bottom: 20px;
 }
 
 .profile-section {
@@ -296,15 +299,55 @@ input {
   background-image: url("../assets/active-genre.svg");
 }
 
+.add-playlist {
+  background-image: url("../assets/add-playist.svg");
+}
+
+.add-playlist:hover {
+  background-image: url("../assets/active-my-playlist.svg");
+}
+
+.favorite {
+  background-image: url("../assets/favourite.svg");
+}
+
+.favorite:hover {
+  background-image: url("../assets/active-fave.svg");
+}
+
+.my-playlist {
+  background-image: url("../assets/my-playlist.svg");
+}
+
+.my-playlist:hover {
+  background-image: url("../assets/active-my-playlist.svg");
+}
+
+.recommended {
+  background-image: url("../assets/recom.svg");
+}
+
+.recommended:hover {
+  background-image: url("../assets/active-rec.svg");
+}
+
+.pod {
+  background-image: url("../assets/podcast.svg");
+}
+
+.pod:hover {
+  background-image: url("../assets/active-pod.svg");
+}
+
 /* sidebar ends */
 
 /* page contents */
 .main-body {
   position: relative;
   background-color: var(--main-body-bg);
-  left: 150px;
+  left: 180px;
   /* top: 62px; */
-  width: calc(100% - 150px);
+  width: calc(100% - 180px);
   /* height: calc(100% - 62px); */
   min-height: 1000vh;
 }
@@ -339,7 +382,7 @@ input {
 
   .image-container {
     width: 220px;
-    background: url("../assets/boomplay-svg.svg") no-repeat center center;
+    background: url("../assets/boomplay-svg.svg") no-repeat 25px center;
   }
 
   .search-bar-container {
