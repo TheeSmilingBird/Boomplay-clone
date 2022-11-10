@@ -395,7 +395,7 @@ img{
   /* top: 62px; */
   width: calc(100% - 180px);
   /* height: calc(100% - 62px); */
-  min-height: 1000vh;
+  /* min-height: 1000vh; */
 }
 
 
