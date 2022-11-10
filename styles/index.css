@@ -33,6 +33,12 @@ body {
   color: white;
 }
 
+footer, header, nav, hgroup, article, section, aside, figure, figcaption, menu, legend, details, iframe {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 button,
 input {
   border: 0;
@@ -415,4 +421,44 @@ input {
   .play-store-img {
     width: 130px;
   }
+}
+
+.bp_footer {
+  position: relative;
+  margin-top: 34px;
+  padding: 32px 0 48px 48px;
+  background-color: #181818;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.bp_footer dl {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.bp_footer dl dd, .bp_footer dl dd a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ccc;
+}
+
+.bp_footer dl dd {
+  display: block;
+  padding-top: 18px;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
 }
